@@ -1,0 +1,36 @@
+:root {}
+
+.app-header {
+    position: fixed;
+    left: 0; right: 0;
+    top: 0;
+    height: 3em;
+    line-height: 3em;
+    background: #2f2b32;
+}
+
+.app-header a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.app-nav {
+    padding: 0 1em;
+    max-width: 32em;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.app-nav a:hover {
+    text-decoration: underline;
+}
+
+.app-body {
+    position: absolute;
+    top: 3em;
+    bottom: 0;
+    left: 0; right: 0;
+    background: #333333;
+}
