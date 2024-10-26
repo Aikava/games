@@ -14,7 +14,6 @@
     color: white;
 }
 
-
 .app-nav {
     padding: 0 1em;
     max-width: 32em;
@@ -33,4 +32,25 @@
     bottom: 0;
     left: 0; right: 0;
     background: #333333;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 2.5in;
+    height: 3.5in;
+    background: white;
+    border-radius: 5px;
+}
+
+.card-stats {
+    display: flex;
+    justify-content: space-between;
+}
+.card-image {
+    flex: 1;
+    background: gray;
+}
+.card-description {
+    display: block
 }
