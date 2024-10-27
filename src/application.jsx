@@ -13,7 +13,7 @@ const userDeck = [
         description: "Basic card"
     }
 ];
-const Card = ({ hp, atk, def, description }) => {
+const Card = ({hp, atk, def, description}) => {
     return (
         <div className="card">
             <div className="card-stats">
@@ -37,9 +37,24 @@ const Home = () => {
         </>
     );
 };
-const Island = () => {
-    return (<h1>Island</h1>);
+
+const islandMap = [
+    { type: "hill", x: 0, y: 0 },
+    { type: "empty", x: 1, y: 0 },
+];
+const Tile = ({ type }) => {
+    return (<div className={`tile ${type}`} />);
 };
+const Island = () => {
+    return (
+        <>
+            <h1>Island</h1>
+            {islandMap.map((tile) => {
+                return (<Tile key={`key=${tile.x}-${tile.y}`} {...tile} />)
+            })}
+        </>);
+};
+const villageMap = []
 const Village = () => {
     return (<h1>Village</h1>);
 };

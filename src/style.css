@@ -54,3 +54,30 @@
 .card-description {
     display: block
 }
+
+.tile {
+    width: 64px;
+    height: 64px;
+}
+
+.tile.hill {
+    background: #1c6f1c;
+}
+.tile.desert {
+    background: #ffe600;
+}
+.tile.forest {
+    background: #40744a;
+}
+.tile.mountain {
+    background: #9d4916;
+}
+.tile.beach {
+    background: #e4b74f;
+}
+.tile.ocean {
+    background: #163c9d;
+}
+.tile.empty {
+    background: #eeeeee;
+}
